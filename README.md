@@ -13,7 +13,7 @@ This repository outlines the configuration and evaluation of a structural Finite
 
 **Key Activities:**
 * Configured a FEM environment in **Abaqus** to simulate composite material layups.
-* Evaluated static load requirements, successfully identifying a lighter structural configuration that satisfied both strength and displacement criteria.
+* Evaluated static load requirements, successfully achieving a **20% overall weight reduction** while satisfying both strength and displacement criteria.
 * Performed modal analysis to extract natural frequencies and mode shapes, critically evaluating the trade-off between mass reduction and dynamic stiffness.
 
 ---
@@ -26,6 +26,6 @@ This repository outlines the configuration and evaluation of a structural Finite
 ---
 
 ## 💡 Engineering Evaluation & Trade-offs
-The structural analysis highlighted a classic engineering trade-off between mass and stiffness. While the proposed weight reduction was statically viable, the modal analysis revealed that the reduced global stiffness caused one of the higher natural frequencies to fall within the restricted **62.5-81.4 Hz excitation range**. 
+The structural analysis highlighted a classic engineering trade-off. While the proposed **20% mass reduction** was statically viable and successfully optimized the console's weight, the modal analysis revealed the consequences of the reduced global stiffness. Specifically, one of the higher natural frequencies shifted and fell within the restricted **62.5-81.4 Hz excitation range** of the marine engine. 
 
-Addressing this resonance in a physical prototype would require localized layup re-orientation or targeted ribbing on the specific resonating panel. This approach ensures the frequency is shifted out of the critical range by locally increasing stiffness, without adding unnecessary global weight to the structure.
+Addressing this localized resonance in a physical prototype would require targeted layup re-orientation or adding specific ribbing on the resonating panel. This approach ensures the frequency is shifted out of the critical range by locally increasing stiffness, without compromising the overall 20% weight savings.
