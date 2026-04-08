@@ -1,7 +1,7 @@
 # Composite Naval Console: FEM Analysis & Weight Optimization ⛵📊
 
-![FEM Simulation](images/abaqus_screenshot.png)
-*Abaqus FEA setup: Static strength assessment and modal shape evaluation on the composite layup.*
+![Combined FEM Analysis](images/FEM_console.png)
+*Figure 1: Side-by-side comparison of static stress verification (left, low failure risk) and modal frequency analysis (right, localized resonance at 70.4 Hz) performed on the composite console.*
 
 ## 📌 Project Overview
 This repository outlines the configuration and evaluation of a structural Finite Element Analysis (FEA) performed on a composite naval console. The objective was to evaluate weight reduction strategies while respecting strict marine engineering standards.
