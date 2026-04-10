@@ -1,31 +1,21 @@
-# Composite Naval Console: FEM Analysis & Weight Optimization ⛵📊
+# Structural Validation & Modal Analysis of a Composite Marine Console 🚤🔧
 
-![Combined FEM Analysis](images/FEM_console.png)
-*Figure 1: Side-by-side comparison of static stress verification (left, low failure risk) and modal frequency analysis (right, localized resonance at 70.47 Hz) performed on the composite console.*
+![Design Trade-off Analysis](images/FEM_results.png)
+*Figure 1: Side-by-side design validation. Left: Static stress verification (Tsai-Hill Index) confirming structural safety. Right: Modal frequency analysis identifying a localized dynamic risk at 70.47 Hz.*
 
-## 📌 Project Overview
-This repository outlines the configuration and evaluation of a structural Finite Element Analysis (FEA) performed on a composite naval console. The objective was to evaluate weight reduction strategies while respecting strict marine engineering standards.
+## 📌 Executive Summary
+This project demonstrates a complete structural validation loop for a composite marine console. The primary engineering directive was to achieve a **20% overall weight reduction** to optimize manufacturing costs and vessel dynamics, without compromising operational safety and compliance.
 
-**Design Constraints & Load Cases:**
-* **Static Strength:** Maintained the composite failure index (Tsai-Hill criterion) below the critical threshold under maximum operational loads.
-* **Global Stiffness:** Verified that maximum nodal displacement did not exceed the strict dimensional tolerances required for onboard instrumentation.
-* **Modal Analysis:** Required to keep natural frequencies outside the critical engine excitation range (**2 - 13.2 Hz, 62.5 - 81.4 Hz**) to prevent resonance.
+The analysis highlights a classic engineering trade-off: while the lightweight design successfully passed static failure criteria, the resulting reduction in global stiffness introduced a dynamic vulnerability (resonance) that requires targeted mitigation before production sign-off.
 
-**Key Activities:**
-* Configured a FEM environment in **Abaqus** to simulate composite material layups.
-* Evaluated static load requirements, successfully achieving a **20% overall weight reduction** while satisfying both strength and displacement criteria.
-* Performed modal analysis to extract natural frequencies and mode shapes, critically evaluating the trade-off between mass reduction and dynamic stiffness.
+## 🎯 Key Engineering Activities & Decision Making
 
----
+* **Stiffness-Driven Optimization:** Managed the weight reduction process by prioritizing maximum deformation constraints (2mm). Achieved the 20% mass reduction target while ensuring structural deflections remained strictly within naval operational limits.
+* **Static Risk Assessment:** Evaluated the composite laminate integrity against extreme operational loads. The Tsai-Hill failure index mapping validated that the structure has a very low risk of static failure.
+* **Dynamic Vulnerability Detection:** Conducted a modal analysis to prevent future NVH (Noise, Vibration, and Harshness) issues. Identified a critical localized resonance at **70.47 Hz**, which falls within the typical engine excitation range (62.5-81.4 Hz), flagging it for necessary local reinforcement prior to manufacturing.
 
-## 🛠️ Tech Stack & Tools
-* **Simulation & FEA:** Abaqus
-* **Materials:** Composite laminates (Layup configuration)
-* **Analysis Types:** Static Structural, Modal (Frequency extraction)
 
----
-
-## 💡 Engineering Evaluation & Trade-offs
-The structural analysis highlighted a classic engineering trade-off. While the proposed **20% mass reduction** was statically viable and successfully optimized the console's weight, the modal analysis revealed the consequences of the reduced global stiffness. Specifically, one of the higher natural frequencies shifted and fell within the restricted **62.5-81.4 Hz excitation range** of the marine engine. 
-
-Addressing this localized resonance in a physical prototype would require targeted layup re-orientation or adding specific ribbing on the resonating panel. This approach ensures the frequency is shifted out of the critical range by locally increasing stiffness, without compromising the overall 20% weight savings.
+## 🛠️ Skills & Methodologies Applied
+* **Core Competencies:** Structural Validation, Design Trade-off Analysis, Risk Assessment, Composite Materials.
+* **Technical Tools:** Abaqus (FEA), Post-Processing & Data Visualization.
+* **Application Domain:** Naval/Marine Engineering, Structural Integrity, NVH Testing preparations.
