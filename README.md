@@ -1,4 +1,5 @@
 # Structural Validation & Modal Analysis of a Composite Marine Console 🚤🔧
+*Academic Project | Politecnico di Milano | Nov. 2024 - Feb. 2025*
 
 ![Design Trade-off Analysis](images/FEM_results.png)
 *Figure 1: Side-by-side design validation. Left: Static stress verification (Tsai-Hill Index) confirming structural safety. Right: Modal frequency analysis identifying a localized dynamic risk at 70.47 Hz.*
